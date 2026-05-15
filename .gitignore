@@ -1,0 +1,68 @@
+# ============================================
+# Kreeda Ankana - Android Project .gitignore
+# ============================================
+
+# ---------- Gradle ----------
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ---------- Android / IntelliJ IDEA ----------
+*.iml
+.idea/
+*.ipr
+*.iws
+.navigation/
+captures/
+output.json
+
+# ---------- Local configuration ----------
+local.properties
+*.jks
+*.keystore
+!debug.keystore
+
+# ---------- Android Studio ----------
+/*/build/
+/*/out/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# ---------- Kotlin ----------
+*.class
+*.log
+*.ctxt
+
+# ---------- OS generated ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Firebase ----------
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+ui-debug.log
+google-services.json
+
+# ---------- Environment / Secrets ----------
+.env
+.env.local
+.env.*.local
+*.secret
+
+# ---------- Misc ----------
+*.hprof
+*.swp
+*~
+.cxx/
