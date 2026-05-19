@@ -1,68 +1,41 @@
-# ============================================
-# Kreeda Ankana - Android Project .gitignore
-# ============================================
-
-# ---------- Gradle ----------
+# ============================================================
+# Android / Gradle build outputs
+# ============================================================
 .gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+app/build/
 
-# ---------- Android / IntelliJ IDEA ----------
-*.iml
-.idea/
-*.ipr
-*.iws
-.navigation/
-captures/
-output.json
-
-# ---------- Local configuration ----------
-local.properties
-*.jks
-*.keystore
-!debug.keystore
-
-# ---------- Android Studio ----------
-/*/build/
-/*/out/
+# Generated APK / AAB artifacts
 *.apk
 *.aab
-*.ap_
-*.dex
 
-# ---------- Kotlin ----------
-*.class
-*.log
-*.ctxt
+# Proguard mapping files (regenerated each build)
+*.mapping
+mapping.txt
 
-# ---------- OS generated ----------
+# Local configuration — contains absolute SDK path, never commit
+local.properties
+
+# Android Studio IDE files
+.idea/
+*.iml
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
+
+# Capture files (Android Studio profiler)
+captures/
+
+# Kotlin/Java generated sources
+app/src/main/gen/
+
+# Lint output
+lint-results*.xml
+lint-results*.html
+
+# Test results
+app/src/test/
+app/src/androidTest/
+
+# OS-specific
 Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
-
-# ---------- Firebase ----------
-firebase-debug.log
-firebase-debug.*.log
-firestore-debug.log
-ui-debug.log
-google-services.json
-
-# ---------- Environment / Secrets ----------
-.env
-.env.local
-.env.*.local
-*.secret
-
-# ---------- Misc ----------
-*.hprof
-*.swp
-*~
-.cxx/
+ehthumbs.db
+Desktop.ini
